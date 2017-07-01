@@ -1,0 +1,12 @@
+<div>
+	<h1><a href="">My first websites</a></h1>
+</div>
+
+{% for i in post %}
+	<div>
+		<p>Published:{{i.created_date}}</p>
+		<h1><a href="">{{ i.title }}</a></h1>
+		<p>{{ i.text| linebreaksbr }}</p>
+	</div>
+
+{% endfor %}
